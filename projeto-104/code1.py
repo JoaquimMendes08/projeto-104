@@ -1,0 +1,15 @@
+import cv2
+
+sistemaS = cv2.imread("solar-system.jpg")
+cv2.putText(sistemaS, "SOL", (100, 100), fontFace=cv2.FONT_HERSHEY_COMPLEX, fontScale = 1.0, color=(0,0,255))
+cv2.putText(sistemaS, "mercurio", (120, 180), fontFace=cv2.FONT_HERSHEY_COMPLEX, fontScale = 0.4, color=(255,255,255))
+cv2.putText(sistemaS, "venus", (200, 175), fontFace=cv2.FONT_HERSHEY_COMPLEX, fontScale = 0.4, color=(255,255,255))
+cv2.putText(sistemaS, "terra", (290, 170), fontFace=cv2.FONT_HERSHEY_COMPLEX, fontScale = 0.4, color=(255,255,255))
+cv2.putText(sistemaS, "lua", (330, 160), fontFace=cv2.FONT_HERSHEY_COMPLEX, fontScale = 0.3, color=(255,255,255))
+cv2.putText(sistemaS, "marte", (370, 180), fontFace=cv2.FONT_HERSHEY_COMPLEX, fontScale = 0.4, color=(255,255,255))
+cv2.putText(sistemaS, "jupiter", (430, 70), fontFace=cv2.FONT_HERSHEY_COMPLEX, fontScale = 0.6, color=(255,255,255))
+cv2.putText(sistemaS, "saturno", (730, 120), fontFace=cv2.FONT_HERSHEY_COMPLEX, fontScale = 0.4, color=(255,255,255))
+cv2.putText(sistemaS, "urano", (940, 140), fontFace=cv2.FONT_HERSHEY_COMPLEX, fontScale = 0.4, color=(255,255,255))
+cv2.putText(sistemaS, "netuno", (1100, 150), fontFace=cv2.FONT_HERSHEY_COMPLEX, fontScale = 0.4, color=(255,255,255))
+cv2.imshow("Planetas", sistemaS)
+cv2.waitKey(5000)
